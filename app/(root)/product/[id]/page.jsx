@@ -5,7 +5,7 @@ import { CartContext, useCart } from "../../context/Context";
 import { formatCurrency } from "../../util/fc";
 import back from "../../images/images.png";
 import share from "../../images/share.png";
-
+import { useRouter } from "next/navigation";
 import s from "./Product.module.scss";
 import Carousel from "./Carousel";
 import Image from "next/image";
@@ -15,8 +15,10 @@ function Product({ params }) {
   const [num, setNum] = React.useState(0);
   const { products , lang } = React.useContext(CartContext);
   const [size, setSize] = React.useState(0);
-console.log(products)
   const { id } = React.use(params);
+  const router = useRouter();
+
+
 
   const items = products.find((cartItem) => cartItem._id === id);
   const shareProduct = (name, text) => {
@@ -103,11 +105,11 @@ console.log(products)
               onClick={() => {
                 increaseItemQty(items?._id, items?.color[num], size);
               }}
-              className="button"
+              className={s.button}
             >
               {lang.addToCart}
             </button>
-            <button onClick={() => navigate("/cart")} className="button">
+            <button onClick={() => router.push("/cart")} className={s.button}>
               {lang.goToCart}
             </button>
           </div>

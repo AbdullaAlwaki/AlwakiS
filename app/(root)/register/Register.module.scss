@@ -1,0 +1,65 @@
+.Register{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 80px;
+  
+    .logo {
+        width: 50%;
+        height: 20%;
+        margin: 15%;
+      }
+
+    svg{
+        width: 30%;
+        height: 15%;
+        }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        width: 100%;
+        }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        }
+
+         
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        input {
+            width: 90%;
+            height: 25%;
+            padding: 15px;
+            margin: 5px 0;
+            border: 2px solid #969696;
+            border-radius: 100px;
+            outline: none;
+            font-size: 1.2rem;
+        }
+        button {
+            width: 90%;
+            height: 30%;
+            margin: 5px 0;
+            padding: 15px;
+            border: 2px solid #d21616;
+            outline: none;
+            background-color: #d21616;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 100px;
+            }
+    }
+}

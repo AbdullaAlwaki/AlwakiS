@@ -1,28 +1,27 @@
 .languageContainer {
     display: flex;
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    height: 100vh; /* Full height of the viewport */
-    background-color: #f9f9f9; /* Light background color for better contrast */
-    gap: 40px; /* Space between options */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-color: #f9f9f9;
+    gap: 40px; 
  
-  
   .languageOption {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px; /* Larger size */
-    height: 250px; /* Larger size */
+    width: 350px;
+    height: 250px; 
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   
     &:hover {
-      transform: scale(1.2); /* Make it bigger on hover */
+      transform: scale(1.2); 
     }
   
     img {
-      width: 70%; /* Scale the image to fit the circle */
+      width: 70%;
       height: auto;
     }
   }
