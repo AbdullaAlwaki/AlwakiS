@@ -1,0 +1,229 @@
+.product_con {
+  width: 100%;
+  height: 100%;
+
+  .product_header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .back{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    margin: 2%;
+    cursor: pointer;
+    
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .share_button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    z-index: 999;
+    margin: 2%;
+    cursor: pointer;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+  
+  .carousel {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .carousel_img {
+      width: 100%;
+      height: 100%;
+      .block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+
+      }
+      img {
+        display: none;
+      }
+    }
+    .carousel_btn {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      padding: 0 1%;
+      top: 0;
+      button {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: none;
+        padding: 2%;
+        &:first-child {
+          transform: rotate(180deg);
+          text-align: right;
+        }
+        &:last-child {
+          text-align: right;
+        }
+        svg {
+          fill: rgba(0, 0, 0, 0.631);
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .product_info_con{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+    .product_description {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      
+    }
+    .product_info{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding:5%;
+  
+      .product_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+        width: 100%;
+        margin: 1% 0;
+      }
+  
+      .product_price {
+        font-size: 1.2rem;
+        text-align: left;
+        width: 100%;
+        margin: 2% 0;
+      }
+  
+    .colors_con {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2% 0;
+  
+      .allColors {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .color_con {
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin: 0;
+          .color {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin: 3%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  
+    .size {
+      width: 100%;
+      height: 100%;
+      margin: 1% 0%;
+      align-items: flex-start;
+      select {
+        width: 100%;
+        height: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: #000 1px solid;
+        outline: none;
+        border-radius: 100px;
+        cursor: pointer;
+        background : none;
+        color: #000000;
+        padding: 2% 5%;
+        margin: 1% 0;
+        &:focus {
+          background-color: #000000;
+          color: #fff;
+        }
+        
+      }
+    }
+    
+  }
+  
+    .btn_con {
+      width: 100%;
+      .product_btn {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .button {
+          width: 100%;
+          height: 50px;
+          font-size: 1.5rem;
+          font-weight: bold;
+          border: none;
+          border-radius: 100px;
+          outline: none;
+          cursor: pointer;
+          background-color: #d30202;
+          margin: 1rem 0 0 0;
+          color: #fff;
+  
+        }
+      }
+    }
+  }
+}
+

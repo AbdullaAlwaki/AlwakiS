@@ -1,0 +1,29 @@
+.languageContainer {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f9f9f9; /* Light background color for better contrast */
+    gap: 40px; /* Space between options */
+ 
+  
+  .languageOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Larger size */
+    height: 250px; /* Larger size */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.2); /* Make it bigger on hover */
+    }
+  
+    img {
+      width: 70%; /* Scale the image to fit the circle */
+      height: auto;
+    }
+  }
+   }

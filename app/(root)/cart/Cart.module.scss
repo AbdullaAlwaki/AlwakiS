@@ -1,0 +1,185 @@
+.conCart {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 80px;
+  
+    .cartFoodItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .conDetails {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+  
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 25px;
+          margin: 10px;
+        }
+  
+        .cartDetails {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 100%;
+          padding: 10px;
+  
+          .cartDetailsSizeColor {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+  
+            span {
+              font-size: 16px;
+              color: #333;
+              margin: 5px 25px;
+  
+              &:first-child {
+                margin: 5px 0;
+              }
+            }
+          }
+  
+          .cartDetailsInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+  
+            .cartQty {
+              width: 70%;
+              height: 100%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+  
+              input {
+                width: 50px;
+                height: 30px;
+                border: 1px solid #000;
+                border-radius: 100px;
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-left: 5px;
+              }
+  
+              .delete {
+                width: 25%;
+                margin: 0;
+  
+                img {
+                  width: 20px;
+                  height: 20px;
+                  margin-top: 5px;
+                }
+              }
+            }
+  
+            .cartDetailsPrice {
+              width: 30%;
+              height: 100%;
+            }
+          }
+  
+          h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            width: 100%;
+            text-align: left;
+          }
+  
+          p {
+            font-size: 14px;
+            color: #6b6b6b;
+            margin: 5px 10px;
+          }
+        }
+      }
+  
+      .cartFoodActions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+  
+        button {
+          height: 3rem;
+          width: 15%;
+          border: none;
+          background-color: #000;
+          color: #fff;
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin: 0 10px;
+  
+          &:last-child {
+            background-color: #ff0000;
+            width: 30%;
+          }
+        }
+  
+        p {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: #333;
+        }
+      }
+    }
+  
+    .cartTotal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0;
+  
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #6b6b6b;
+        margin: 0;
+      }
+    }
+  
+    button {
+      width: 90%;
+      height: 30%;
+      margin: 5px 0;
+      padding: 15px;
+      border: 2px solid #d21616;
+      outline: none;
+      background-color: #d21616;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 100px;
+    }
+  }
+  
+  .nonCart {
+    height: 100%;
+    padding: 20px;
+    margin-top: 60%;
+    font-size: 3rem;
+  }
+  

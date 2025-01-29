@@ -1,0 +1,49 @@
+.conOrder {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .orderCart {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    .orderItem {
+      margin-bottom: 10px;
+  
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+  
+  .noOrder {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+  
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0070f3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #005bb5;
+      }
+    }
+  }
+  
