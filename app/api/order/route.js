@@ -24,7 +24,8 @@ export async function POST(req) {
       paymentMethod,
       totalPrice,
     });
-console.log(order);
+
+    await order.save(); // ✅ حفظ الطلب في قاعدة البيانات
 
     return NextResponse.json(
       { success: true, order },

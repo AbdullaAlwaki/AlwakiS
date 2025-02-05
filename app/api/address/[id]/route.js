@@ -17,7 +17,6 @@ export async function GET(req, { params }) {
   }
 }
 
-// ✅ Update Address by ID
 export async function PUT(req, { params }) {
   try {
     await connectDB();
@@ -39,7 +38,6 @@ export async function PUT(req, { params }) {
   }
 }
 
-// ✅ Delete Address by ID
 export async function DELETE(req, { params }) {
   try {
     await connectDB();
