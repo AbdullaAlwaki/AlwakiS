@@ -25,15 +25,13 @@ export async function GET(req) {
     const { searchParams } = new URL(req.url);
     const lang = searchParams.get("lang"); // ?lang=en
 
-    console.log(lang);
     if (!lang) {
       return NextResponse.json({ success: false, error: "Language name is required" }, { status: 400 });
     }
 
     const language = await Language.find({ nameLang: lang });
-    
 
-    if (!language) {
+    if (!language.length) {
       return NextResponse.json({ success: false, error: "Language not found" }, { status: 404 });
     }
 
