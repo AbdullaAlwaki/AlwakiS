@@ -1,11 +1,11 @@
 import { connectDB } from "../../../lib/mongodb";
 import { Address } from "../../../models/address";
 import { NextResponse } from "next/server";
-import mongoose from "mongoose"; 
+import mongoose from "mongoose";
 
 export async function GET(req) {
   try {
-    await connectDB(); 
+    await connectDB();
     const { searchParams } = new URL(req.url);
     const userId = searchParams.get("userId");
 
@@ -25,6 +25,7 @@ export async function GET(req) {
 
     return NextResponse.json({ success: true, addresses });
   } catch (error) {
+    console.error("❌ Error:", error);
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }
