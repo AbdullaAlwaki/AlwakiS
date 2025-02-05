@@ -1,6 +1,6 @@
 // src/app/api/products/route.js
 import { connectDB } from "../../../lib/mongodb";
-import Product  from "../../../models/product";
+import {Product}  from "../../../models/product";
 import { NextResponse } from "next/server";
 
 // 🔹 Fetch Products
