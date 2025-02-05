@@ -1,9 +1,9 @@
-import { connectDB } from "../../../lib/mongodb";
-import Product from "../../../models/product";
+import { connectDB } from "@/lib/mongodb"; // ✅ استخدم alias بدلاً من ../../../
+import Product from "@/models/product";
 import { NextResponse } from "next/server";
 
-
-export async function GET(req) {
+// ✅ Fetch Products
+export async function GET() {
   try {
     await connectDB();
     const products = await Product.find();
@@ -13,7 +13,7 @@ export async function GET(req) {
   }
 }
 
-
+// ✅ Add a New Product
 export async function POST(req) {
   try {
     await connectDB();
@@ -26,14 +26,10 @@ export async function POST(req) {
       );
     }
 
-    const newProduct = new Product({
-      name: body.name,
-      price: body.price,
-      description: body.description,
-    });
-
+    const newProduct = new Product(body);
     await newProduct.save();
-    return NextResponse.json({ success: true, message: "Product added!" }, { status: 201 });
+
+    return NextResponse.json({ success: true, message: "Product added!", product: newProduct }, { status: 201 });
   } catch (error) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
